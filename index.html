@@ -10,35 +10,47 @@
     <header>
         <nav>
             <span>Go to section: </span>
-            <a href="#summary">Summary</a> <span>|</span>
             <a href="#meeting-minutes">Meeting Minutes</a> <span>|</span>
-            <a href="#recordings">Recordings</a>
+            <a href="#recordings">Recordings</a> <span>|</span>
+            <a href="#survey">Feedback Survey</a>
         </nav>
         <section id="header-info">
             <h1>Team Meeting Notes</h1>
             <h3>Meeting Date: 04-09-2025</h3>
-            <sub>Attendees: Yuan-Kai "Kevin" Yang, John Smith, Jane Doe</sub>
+            <sub><b>Topic:</b> Brainstorming App Ideas</sub> <br>
+            <sub>Attendees: Yuan-Kai "Kevin" Yang, John Smith, Jane Doe</sub> <br>
+            <sub>Absentees: John Legend</sub>
         </section>
         <hr>
     </header>
     <main>
-        <details id="summary">
-            <summary>Summary of Meeting Notes</summary>
-            <p>In this meeting, we discussed the following topics:</p>
-            <ul>
-                <li>Project updates</li>
-                <li>Upcoming deadlines</li>
-                <li>Team feedback</li>
-            </ul>
-        </details>
+ 
         <section id="meeting-minutes">
             <h2>Meeting Minutes</h2>
-            <p>Topics to discuss</p>
+            <details id="summary">
+                <summary>Summary of Meeting Notes</summary>
+                <hr> <hr>
+                <p>In this meeting, we discussed the following topics:</p>
+                <ul>
+                    <li>Unfinished Business From Last Time</li>
+                    <li>Roles and Responsibilities</li>
+                    <li>Supplies We Need</li>
+                    <li>Diagrams</li>
+                    <li>Action Items</li>
+                </ul>
+                <hr> <hr>
+            </details>
+            <p><strong>[AGENDA]</strong> Topics to discuss</p>
             <ul>
+                <li>Unfinished Business From Last Time</li>
                 <li>Roles and Responsibilities</li>
-                <li>Project updates</li>
-                <li>Upcoming deadlines</li>
+                <li>Supplies We Need</li>
+                <li>Diagrams</li>
+                <li>Action Items</li>
             </ul>
+
+            <h3>Unfinished Business</h3>
+            <p>There is no unfinished business, this is our first meeting.</p>
 
             <h3>Roles and Responsibilities</h3>
             <ul>
@@ -59,13 +71,35 @@
             <p>This is a Nondeterministic Finite Automaton: </p>
             <img src="images/diagram.jpg" alt="A Nondeterministic Finite Automaton diagram" width="400" height="240">
 
+            <h3>Action Items</h3>
+            <ul>
+                <li><strong>[URGENT]</strong> We ran out of coffee stirrers</li>
+                <li>Push navbar branch to <em>frontend</em> branch (not <em>main</em> branch)</li>
+            </ul>
+
+            <h3>Comments, Questions, Concerns?</h3>
+            <ul>
+                <li><b>John</b>: "Can we get Caprisun for the office?"</li>
+                <ul>
+                    <li><b>Kevin:</b> "No."</li>
+                </ul>
+
+                <li><b>Jane:</b> "Woah, I didn't know you could do indented list items in HTML."</li>
+                <ul>
+                    <li><b>Kevin:</b> "Apparently so. The documentation is surprisingly helpful."</li>
+                </ul>
+            </ul>
             
-        </section> <hr>
+        </section>
+        <hr>
         <section id="recordings">
             <h2>Recordings</h2>
             <div>
                 <p>Video Recording:</p>
-                <video width="320" height="240" controls src="media/video.mp4"></video>
+                <video width="320" height="240" controls>
+                    <source src="media/video.mp4" type="video/mp4"/>
+                    Your browser does not support the video tag.
+                </video>
 
                 <p>Audio Recording:</p>
                 <audio controls>
@@ -73,12 +107,76 @@
                     Your browser does not support the audio tag.
                 </audio>
             </div>
-            
-        </section> <hr>
+        </section>
+        <hr>
+        <section id="survey">
+            <h2>Feedback Survey</h2>
+
+            <form action="#">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="currDate">Today's Date</label><br>
+                <input type="date" id="currDate" name="currDate"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <fieldset>
+                    <legend>Rate the Meeting:</legend>
+                    <label for="rating-1">1</label>
+                    <input type="radio" id="rating-1" name="rating" value="1">
+                    <label for="rating-2">2</label>
+                    <input type="radio" id="rating-2" name="rating" value="2">
+                    <label for="rating-3">3</label>
+                    <input type="radio" id="rating-3" name="rating" value="3">
+                    <label for="rating-4">4</label>
+                    <input type="radio" id="rating-4" name="rating" value="4">
+                    <label for="rating-5">5</label>
+                    <input type="radio" id="rating-5" name="rating" value="5">
+                </fieldset> <br>
+
+
+                <p>Which kind of pet do you have?</p>
+                <input type="checkbox" id="pet1" name="pet1" value="Dog">
+                <label for="pet1">Dog</label><br>
+                <input type="checkbox" id="pet2" name="pet2" value="Cat">
+                <label for="pet2">Cat</label><br>
+                <input type="checkbox" id="pet3" name="pet3" value="Other">
+                <label for="pet3">Other</label><br> <br>
+
+                <label for="feedback">Feedback:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+
+                <button>Fun Button</button> <br><br>
+
+                <label for="raise">Who should get a raise on the team?</label>
+                <select name="raise" id="raise">
+                  <option value="kevin">Kevin</option>
+                  <option value="john">John</option>
+                  <option value="jane">Jane</option>
+                </select>
+                <br><br>
+
+                <label for="department">Choose a Department:</label>
+                <input list="departmentNames" id="department" name="department">
+                <datalist id="departmentNames">
+                    <option value="CSE"></option>
+                    <option value="DSC"></option>
+                    <option value="Google"></option>
+                    <option value="Apple"></option>
+                    <option value="HDH"></option>
+                  </datalist> <br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+
+        </section>
+        <hr>
 
 
     </main>
     <footer>
+        <p>Author: Yuan-Kai Yang</p>
+        <p><a href="mailto:yuy080@ucsd.edu">yuy080@ucsd.edu</a></p>
+        <sub>© Copyright 2025 Yuan-Kai Yang</sub>
 
     </footer>
   </body>
