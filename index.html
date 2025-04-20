@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>Team Meeting Notes</title>
   </head>
   <body>
     <header>
         <nav>
-            <span>Go to section: </span>
-            <a href="#meeting-minutes">Meeting Minutes</a> <span>|</span>
-            <a href="#recordings">Recordings</a> <span>|</span>
-            <a href="#survey">Feedback Survey</a>
+            <a href="#meeting-1">Meeting 1</a>
+            <a href="#meeting-2">Meeting 2</a>
+            <a href="#meeting-3">Meeting 3</a>
+            <a href="#survey">Survey</a>
         </nav>
         <section id="header-info">
-            <h1>Team Meeting Notes</h1>
-            <h3>Meeting Date: 04-09-2025</h3>
-            <sub><b>Topic:</b> Brainstorming App Ideas</sub> <br>
-            <sub>Attendees: Yuan-Kai "Kevin" Yang, John Smith, Jane Doe</sub> <br>
-            <sub>Absentees: John Legend</sub>
+            <h1>Team Meeting Notes 2024-25</h1>
+            
         </section>
         <hr>
     </header>
     <main>
  
-        <section id="meeting-minutes">
-            <h2>Meeting Minutes</h2>
+        <section class="meeting-minutes" id="meeting-1">
+            <h2>Meeting 1</h2>
+            <h3>Meeting Date: 04-09-2025</h3>
+            <sub><b>Topic:</b> Brainstorming App Ideas</sub> <br>
+            <sub>Attendees: Yuan-Kai "Kevin" Yang, John Smith, Jane Doe</sub>
+            <sub>Absentees: John Legend</sub> <br><br>
             <details id="summary">
                 <summary>Summary of Meeting Notes</summary>
                 <hr> <hr>
@@ -83,26 +85,190 @@
                 <li><b>Jane:</b> "Can we get Welches Fruit Snacks for the office?"</li>
                 <li><b>Kevin:</b> "No."</li>
             </ul>
-            
+            <section>
+                <h2>Recordings</h2>
+                <div>
+                    <p>Video Recording:</p>
+                    <video width="320" height="240" controls>
+                        <source src="media/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+    
+                    <p>Audio Recording:</p>
+                    <audio controls>
+                        <source src="media/audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </div>
+            </section>
         </section>
+        
         <hr>
-        <section id="recordings">
-            <h2>Recordings</h2>
-            <div>
-                <p>Video Recording:</p>
-                <video width="320" height="240" controls>
-                    <source src="media/video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
 
-                <p>Audio Recording:</p>
-                <audio controls>
-                    <source src="media/audio.mp3" type="audio/mpeg">
-                    Your browser does not support the audio tag.
-                </audio>
-            </div>
+        <section class="meeting-minutes" id="meeting-2">
+            <h2>Meeting 2</h2>
+            <h3>Meeting Date: 04-19-2025</h3>
+            <sub><b>Topic:</b> Second Meeting!</sub> <br>
+            <sub>Attendees: Yuan-Kai "Kevin" Yang, John Smith, Jane Doe</sub>
+            <sub>Absentees: John Legend</sub> <br><br>
+            <details id="summary">
+                <summary>Summary of Meeting Notes</summary>
+                <hr> <hr>
+                <p>In this meeting, we discussed the following topics:</p>
+                <ul>
+                    <li>Unfinished Business From Last Time</li>
+                    <li>Roles and Responsibilities</li>
+                    <li>Supplies We Need</li>
+                    <li>Diagrams</li>
+                    <li>Action Items</li>
+                </ul>
+                <hr> <hr>
+            </details>
+            <p><strong>[AGENDA]</strong> Topics to discuss</p>
+            <ul>
+                <li>Unfinished Business From Last Time</li>
+                <li>Roles and Responsibilities</li>
+                <li>Supplies We Need</li>
+                <li>Diagrams</li>
+                <li>Action Items</li>
+            </ul>
+
+            <h3>Unfinished Business</h3>
+            <p>There is no unfinished business.</p>
+
+            <h3>Roles and Responsibilities</h3>
+            <ul>
+                <li><b>Kevin</b>: Frontend Developer</li>
+                <li><b>John</b>: Backend Developer</li>
+                <li><b>Jane</b>: Quality Assurance <i>(Jane is still trying out new roles to see what she likes)</i></li>
+            </ul>
+
+            <h3>Supplies We Need</h3>
+            <ol>
+                <li>Whiteboard</li>
+                <li>Markers</li>
+                <li>Sticky notes</li>
+                <li>Laptop</li>
+            </ol>
+
+            <h3>Diagrams</h3>
+            <p>This is the same Nondeterministic Finite Automaton: </p>
+            <img src="images/diagram.jpg" alt="A Nondeterministic Finite Automaton diagram" width="400" height="240">
+
+            <h3>Action Items</h3>
+            <ul>
+                <li><strong>[URGENT]</strong> We still need coffee stirrers</li>
+                <li>Push navbar branch to <em>frontend</em> branch (not <em>main</em> branch)</li>
+            </ul>
+
+            <h3>Comments, Questions, Concerns?</h3>
+            <ul>
+                <li><b>John:</b> "Can we get Caprisun for the office?"</li>
+                <li><b>Jane:</b> "Can we get Welches Fruit Snacks for the office?"</li>
+                <li><b>Kevin:</b> "No."</li>
+            </ul>
+            <section>
+                <h2>Recordings</h2>
+                <div>
+                    <p>Video Recording:</p>
+                    <video width="320" height="240" controls>
+                        <source src="media/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+    
+                    <p>Audio Recording:</p>
+                    <audio controls>
+                        <source src="media/audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </div>
+            </section>
         </section>
+        
         <hr>
+
+        <section class="meeting-minutes" id="meeting-3">
+            <h2>Meeting 3</h2>
+            <h3>Meeting Date: 04-29-2025</h3>
+            <sub><b>Topic:</b> Maybe this company is not working</sub> <br>
+            <sub>Attendees: Yuan-Kai "Kevin" Yang, John Smith, Jane Doe</sub>
+            <sub>Absentees: John Legend</sub> <br><br>
+            <details id="summary">
+                <summary>Summary of Meeting Notes</summary>
+                <hr> <hr>
+                <p>In this meeting, we discussed the following topics:</p>
+                <ul>
+                    <li>Unfinished Business From Last Time</li>
+                    <li>Roles and Responsibilities</li>
+                    <li>Supplies We Need</li>
+                    <li>Diagrams</li>
+                    <li>Action Items</li>
+                </ul>
+                <hr> <hr>
+            </details>
+            <p><strong>[AGENDA]</strong> Topics to discuss</p>
+            <ul>
+                <li>Unfinished Business From Last Time</li>
+                <li>Roles and Responsibilities</li>
+                <li>Supplies We Need</li>
+                <li>Diagrams</li>
+                <li>Action Items</li>
+            </ul>
+
+            <h3>Unfinished Business</h3>
+            <p>This might be the last meeting of this company</p>
+
+            <h3>Roles and Responsibilities</h3>
+            <ul>
+                <li><b>Kevin</b>: Frontend Developer</li>
+                <li><b>John</b>: Backend Developer</li>
+                <li><b>Jane</b>: Human Resources <i>(Jane is still trying out new roles to see what she likes)</i></li>
+            </ul>
+
+            <h3>Supplies We Need</h3>
+            <ol>
+                <li>Whiteboard</li>
+                <li>Markers</li>
+                <li>Sticky notes</li>
+                <li>Laptop</li>
+            </ol>
+
+            <h3>Diagrams</h3>
+            <p>This is a Nondeterministic Finite Automaton: </p>
+            <img src="images/diagram.jpg" alt="A Nondeterministic Finite Automaton diagram" width="400" height="240">
+
+            <h3>Action Items</h3>
+            <ul>
+                <li><strong>[URGENT]</strong> We ran out of coffee stirrers</li>
+                <li>Push navbar branch to <em>frontend</em> branch (not <em>main</em> branch)</li>
+            </ul>
+
+            <h3>Comments, Questions, Concerns?</h3>
+            <ul>
+                <li><b>John:</b> "Can we get Caprisun for the office?"</li>
+                <li><b>Jane:</b> "Can we get Welches Fruit Snacks for the office?"</li>
+                <li><b>Kevin:</b> "No."</li>
+            </ul>
+            <section>
+                <h2>Recordings</h2>
+                <div>
+                    <p>Video Recording:</p>
+                    <video width="320" height="240" controls>
+                        <source src="media/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+    
+                    <p>Audio Recording:</p>
+                    <audio controls>
+                        <source src="media/audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </div>
+            </section>
+        </section>
+        
+        <hr>
+
         <section id="survey">
             <h2>Feedback Survey</h2>
 
