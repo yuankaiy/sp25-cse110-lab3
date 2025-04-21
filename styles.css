@@ -108,4 +108,23 @@ video{
 
 /** Survey **/
 
+#survey h2{
+  margin: 20pt 0;
+  text-align: center;
+}
+
+form{
+  max-width: 80%;
+}
+
+input[type="checkbox"] {
+  accent-color: red;
+}
+
+
+input[type="checkbox"] {
+  accent-color: red;
+}
+
+
 /** Footer **/
