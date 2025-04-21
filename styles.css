@@ -1,3 +1,55 @@
-body{
-    background-color: red;
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+:root {
+  --main-font: "Raleway";
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+
+body {
+  font-family: var(--main-font, sans-serif);
+}
+
+/** Navbar **/
+
+nav {
+  list-style-type: none; /* This gets rid of bullet points */
+  background-color: rgb(5, 47, 95);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li a {
+  display: inline-block;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+}
+
+nav li a:hover {
+  background-color: hsl(198, 100%, 23%);
+}
+
+nav li a:active {
+    background-color: #06A77D;
+}
+
+/** Meeting Minutes **/
+
+/** Survey **/
+
+/** Footer **/
