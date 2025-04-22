@@ -142,6 +142,11 @@ details{
     min-width: 300px;
 }
 
+main ol:has(li) {
+  display: inline-block;
+  border: 2px dotted blue;
+}
+
 video{
     width: 320px;
     height: 240px;
@@ -193,7 +198,6 @@ video{
     background-color: #555;
   }
 }
-
 
 
 /** Survey **/
