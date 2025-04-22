@@ -49,6 +49,7 @@ nav li a {
   color: white;
 }
 
+
 nav li a:hover {
   background-color: hsl(198, 100%, 23%);
 }
@@ -56,6 +57,37 @@ nav li a:hover {
 nav li a:active {
     background-color: color-mix(in srgb, hwb(0 0% 0%), blue);
 }
+
+
+@media (max-width: 768px) {
+  nav ul {
+      align-items: center;
+  }
+
+  nav li {
+      margin: 0;
+  }
+
+  nav a {
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+      font-size: 16px;
+  }
+
+  nav ul {
+      padding: 0 10px;
+  }
+
+  .back-to-top-nav, .survey-nav{
+    display: none !important;
+  }
+
+}
+
 
 /** Meeting Minutes **/
 
@@ -69,7 +101,7 @@ nav li a:active {
 }
 
 .meeting-minutes:nth-of-type(odd) {
-  background-color: #eeeeee;
+  background-color: color(srgb 0.933 0.933 0.933 / 0.9);
 }
 
 .meeting-minutes > h2{
@@ -123,6 +155,30 @@ video{
   padding: 20px;
 }
 
+@media (max-width: 768px) {
+  video {
+    width: 80%;
+    height: auto;
+  }
+
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  video {
+    width: 80%;
+    height: auto;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
 .back-to-top {
   position: fixed;
   bottom: 20px;
@@ -166,6 +222,7 @@ footer{
 
 footer p{
   margin-left: 8mm;
+  display: block;
 }
 
 footer p ~ sub{
