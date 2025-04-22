@@ -22,7 +22,7 @@ body {
 nav {
   list-style-type: none; /* This gets rid of bullet points */
   background-color: rgb(5, 47, 95);
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   overflow: hidden;
@@ -60,7 +60,7 @@ nav li a:active {
 /** Meeting Minutes **/
 
 #header-info {
-  margin-top: 60px;
+  margin-top: 20px;
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
@@ -122,6 +122,22 @@ video{
   grid-auto-rows: minmax(100px, auto);
   padding: 20px;
 }
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  padding: 15px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top:hover {
+  background-color: #555;
+}
+
 
 /** Survey **/
 
